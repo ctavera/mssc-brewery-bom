@@ -15,30 +15,12 @@
 
     <packaging>pom</packaging>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
-
     <licenses>
         <license>
             <name>GNU General Public License v3.0</name>
             <url>https://www.gnu.org/licenses/gpl.txt</url>
         </license>
     </licenses>
-
-    <scm>
-        <connection>scm:git:git://github.com/ctavera/mssc-brewery-bom.git</connection>
-        <developerConnection>scm:git:git@github.com:ctavera/mssc-brewery-bom.git</developerConnection>
-        <url>https://github.com/ctavera/mssc-brewery-bom.git</url>
-        <tag>1.0.0</tag>
-    </scm>
 
     <organization>
         <name>Developer Asociados</name>
@@ -259,10 +241,10 @@
                                 </goals>
                             </execution>
                         </executions>
-<!--                        <configuration>-->
-<!--                            &lt;!&ndash;                Exclude Lombok enhanced classes&ndash;&gt;-->
-<!--                            <excludePackageNames>guru.sfg.brewery.model.*:*.mapper.*:*.domain.*:*.mappers.*</excludePackageNames>-->
-<!--                        </configuration>-->
+                        <configuration>
+                            <!--                Exclude Lombok enhanced classes-->
+                            <excludePackageNames>da.springframework.brewery.model.*:*.mapper.*:*.domain.*:*.mappers.*</excludePackageNames>
+                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -282,4 +264,22 @@
             </build>
         </profile>
     </profiles>
+
+    <scm>
+        <connection>scm:git:git://github.com/ctavera/mssc-brewery-bom.git</connection>
+        <developerConnection>scm:git:git@github.com:ctavera/mssc-brewery-bom.git</developerConnection>
+        <url>https://github.com/ctavera/mssc-brewery-bom</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 </project>
