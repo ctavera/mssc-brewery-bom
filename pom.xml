@@ -11,7 +11,7 @@
 
     <groupId>io.github.ctavera</groupId>
     <artifactId>mssc-brewery-bom</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <distributionManagement>
@@ -36,7 +36,7 @@
         <connection>scm:git:git://github.com/ctavera/mssc-brewery-bom.git</connection>
         <developerConnection>scm:git:git@github.com:ctavera/mssc-brewery-bom.git</developerConnection>
         <url>https://github.com/ctavera/mssc-brewery-bom.git</url>
-        <tag>1.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <organization>
@@ -258,10 +258,10 @@
                                 </goals>
                             </execution>
                         </executions>
-<!--                        <configuration>-->
-<!--                            &lt;!&ndash;                Exclude Lombok enhanced classes&ndash;&gt;-->
-<!--                            <excludePackageNames>guru.sfg.brewery.model.*:*.mapper.*:*.domain.*:*.mappers.*</excludePackageNames>-->
-<!--                        </configuration>-->
+                        <configuration>
+                            <!--                Exclude Lombok enhanced classes-->
+                            <excludePackageNames>sa.springframework.brewery.model.*:*.mapper.*:*.domain.*:*.mappers.*</excludePackageNames>
+                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
