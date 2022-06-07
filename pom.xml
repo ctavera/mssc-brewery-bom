@@ -230,7 +230,7 @@
                         <configuration>
                             <serverId>ossrh</serverId>
                             <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                            <autoReleaseAfterClose>false</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
                     <plugin>
@@ -289,3 +289,28 @@
         </profile>
     </profiles>
 </project>
+
+<!--settings.xml file for maven, under ~\.m2-->
+<!--<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">-->
+<!--<servers>-->
+<!--    <server>-->
+<!--        <id>ossrh</id>-->
+<!--        <username>cTaveraKD</username>-->
+<!--        <password>#TkD#MdBB.2019</password>-->
+<!--    </server>-->
+<!--</servers>-->
+
+<!--<profiles>-->
+<!--    <profile>-->
+<!--        <id>ossrh</id>-->
+<!--        <activation>-->
+<!--            <activeByDefault>true</activeByDefault>-->
+<!--        </activation>-->
+<!--        <properties>-->
+<!--            <gpg.executable>gpg</gpg.executable>-->
+<!--            <gpg.passphrase>TaeKwonDo1</gpg.passphrase>-->
+<!--        </properties>-->
+<!--    </profile>-->
+<!--</profiles>-->
+<!--</settings>-->
