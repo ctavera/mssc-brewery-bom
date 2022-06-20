@@ -1,3 +1,3 @@
-# MSSC Brewery POM
+# MSSC Brewery BOM
 
-General POM.
+General BOM for Brewery Microservices Projects.
