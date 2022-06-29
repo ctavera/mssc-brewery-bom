@@ -62,7 +62,7 @@
         <jaxb.version>3.0.2</jaxb.version>
         <awaitility.version>4.2.0</awaitility.version>
         <!--set this to your docker acct name-->
-        <docker.image.prefix>dabeerworks</docker.image.prefix>
+        <docker.image.prefix>tkdchris</docker.image.prefix>
         <!--Set to name of project-->
         <docker.image.name>${project.artifactId}</docker.image.name>
     </properties>
